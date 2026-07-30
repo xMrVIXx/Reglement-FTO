@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Règlement FTO</title>
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <style>
         * {
             box-sizing: border-box
@@ -167,34 +166,40 @@
         }
 
         .article6 {
+            border-color: #cbd5e1;
+            background: linear-gradient(135deg, #cbd5e12b, #cbd5e108)
+        }
+
+        .article6 h3 {
+            color: #cbd5e1
+        }
+
+        .article7 {
             border-color: #06b6d4;
             background: linear-gradient(135deg, #06b6d42b, #06b6d408)
         }
 
-        .article6 h3 {
+        .article7 h3 {
             color: #06b6d4
         }
 
-        .article7 {
+        .article8 {
             border-color: #b91c1c;
             background: linear-gradient(135deg, #b91c1c2b, #b91c1c08)
         }
 
-        .article7 h3 {
+        .article8 h3 {
             color: #b91c1c
         }
 
-        .article8 {
+        .article9 {
             border-color: #64748b;
             background: linear-gradient(135deg, #64748b2b, #64748b08)
         }
 
-        .article8 h3 {
+        .article9 h3 {
             color: #64748b
         }
-
-
-        /* HALOS AU SURVOL */
 
         .article1:hover {
             box-shadow: 0 12px 35px #d4af3740
@@ -216,20 +221,17 @@
             box-shadow: 0 12px 35px #22c55e40
         }
 
-        .article6:hover {
+        .article7:hover {
             box-shadow: 0 12px 35px #06b6d440
         }
 
-        .article7:hover {
+        .article8:hover {
             box-shadow: 0 12px 35px #b91c1c40
         }
 
-        .article8:hover {
+        .article9:hover {
             box-shadow: 0 12px 35px #64748b40
         }
-
-
-        /* FOOTER */
 
         .footer {
             margin-top: 30px;
@@ -264,7 +266,7 @@
             letter-spacing: 2px;
             text-transform: uppercase;
             background: linear-gradient(90deg, #38bdf8, #a855f7, #22d3ee, #d4af37);
-            -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 12px
         }
@@ -274,34 +276,10 @@
             color: rgba(255, 255, 255, .9);
             letter-spacing: .7px
         }
-
-
-        /* BOUTON */
-
-        .export-btn {
-            display: block;
-            margin: 15px auto;
-            padding: 12px 22px;
-            font-size: 14px;
-            cursor: pointer;
-            border: 0;
-            border-radius: 8px;
-            background: #2d2d2d;
-            color: white;
-            transition: .25s ease
-        }
-
-        .export-btn:hover {
-            background: #3a3a3a;
-            transform: translateY(-2px)
-        }
     </style>
 </head>
 
 <body>
-
-    <button class="export-btn" id="download">Télécharger la fiche</button>
-
     <div class="container" id="fto">
 
         <div class="header">
@@ -382,7 +360,53 @@
             </div>
 
             <div class="article article6">
-                <h3>ARTICLE 6 — LOGS DES EXAMENS</h3>
+                <h3>ARTICLE 6 - HIÉRARCHIE D'UNE FORMATION</h3>
+
+                <p>
+                    Chaque membre de la hiérarchie d'une formation possède des responsabilités spécifiques afin
+                    d'assurer
+                    la gestion, l'organisation, la qualité et le bon fonctionnement des formations.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Lead :</strong> Il est responsable de la gestion globale de sa formation.
+                        Il assure son maintien à jour, la gestion de son effectif ainsi que le bon déroulement des formations organisées.
+                        Il est également chargé de gérer les différents problèmes pouvant concerner les formateurs
+                        de sa formation et reste l'interlocuteur principal auprès de la Direction.
+                    </li>
+
+                    <li>
+                        <strong>Co-Lead :</strong> Il accompagne le Lead dans l'ensemble de ses missions.
+                        Il participe activement à la gestion de la formation, apporte son soutien dans les différentes
+                        décisions et assure la gestion de celle-ci en son absence.
+                    </li>
+
+                    <li>
+                        <strong>Superviseur :</strong> Il est chargé de superviser les formateurs de la
+                        formation. Il veille au respect de la qualité des formations dispensées et à la bonne
+                        transmission des connaissances aux agents. Il peut assister à une formation réalisée par 
+                        un formateur déjà validé sans prévenir, afin d'évaluer son déroulement, la qualité des informations 
+                        transmises ainsi que le respect des règles établies. Il est également chargé de recueillir les retours/avis/suggestions 
+                        concernant la formation et de transmettre les différentes suggestions ou améliorations au Lead et au Co-Lead.
+                    </li>
+
+                    <li>
+                        <strong>Formateur :</strong> Il est chargé d'effectuer les formations en respectant les règles et attentes définies par la formation.
+                        Il doit assurer un enseignement de qualité auprès des agents et peut proposer des suggestions
+                        ou des améliorations concernant la formation au Superviseur.
+                    </li>
+                </ul>
+
+                <p>
+                    La gestion d'une formation repose avant tout sur un travail d'équipe entre le Lead, le Co-Lead
+                    et le Superviseur. La communication, l'entraide et la coordination entre ces trois rôles sont
+                    essentielles afin de garantir le bon fonctionnement et l'évolution de la formation.
+                </p>
+            </div>
+
+            <div class="article article7">
+                <h3>ARTICLE 7 — LOGS DES EXAMENS</h3>
                 <p>
                     Lorsqu'une formation est organisée, le formateur est tenu de notifier les informations de cette
                     dernière dans le salon <strong>#logs-examen</strong>.
@@ -393,8 +417,8 @@
                 </ul>
             </div>
 
-            <div class="article article7">
-                <h3>ARTICLE 7 — COMPORTEMENT DES FORMATEURS</h3>
+            <div class="article article8">
+                <h3>ARTICLE 8 — COMPORTEMENT DES FORMATEURS</h3>
                 <p>
                     Tout membre de la Division FTO représente l'image de la Police. À ce titre, il est tenu de :
                 </p>
@@ -412,8 +436,8 @@
                 </ul>
             </div>
 
-            <div class="article article8">
-                <h3>ARTICLE 8 — RESPECT DU RÈGLEMENT</h3>
+            <div class="article article9">
+                <h3>ARTICLE 9 — RESPECT DU RÈGLEMENT</h3>
                 <p>
                     Le non-respect du présent règlement pourra entraîner, selon la gravité des faits :
                 </p>
@@ -453,17 +477,6 @@
         </div>
 
     </div>
-
-    <script>
-        document.getElementById("download").onclick = async function () {
-            const canvas = await html2canvas(document.getElementById("fto"), { scale: 5, useCORS: true });
-            const link = document.createElement("a");
-            link.download = "reglement_fto.png";
-            link.href = canvas.toDataURL("image/png");
-            link.click();
-        }
-    </script>
-
 </body>
 
 </html>
